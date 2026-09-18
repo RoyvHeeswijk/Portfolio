@@ -5,6 +5,11 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
+  async redirects() {
+    return [
+      { source: '/beheer/:path*', destination: '/', permanent: false },
+    ];
+  },
 }
 
 module.exports = nextConfig

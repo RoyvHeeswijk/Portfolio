@@ -80,19 +80,7 @@ This project is optimized for deployment on Vercel:
 
 Bezoekersstatistieken lopen via **Vercel Web Analytics** (cookieless, geanonimiseerd).
 
-### Eenmalige setup in Vercel
-
-1. **Dashboard** → Portfolio-project → **Analytics** → **Enable Web Analytics**
-2. **Settings → Environment Variables** (Production):
-   - `ANALYTICS_OWNER_SECRET` — pincode voor `/beheer/analytics`
-   - `NEXT_PUBLIC_VERCEL_ANALYTICS_URL` *(optioneel)* — directe link naar je Analytics-dashboard, bijv. `https://vercel.com/[team]/portfolio/analytics`
-3. Redeploy na het instellen van env vars
-
-### Eigen bezoeken uitsluiten
-
-1. Bookmark: `https://jouw-domein/beheer/analytics`
-2. Log in met je pincode
-3. Klik **Mijn bezoeken uitsluiten** — geldt per browser/apparaat
+Eigen bezoeken vanaf de gekoppelde laptop worden automatisch uitgesloten. Er is geen publieke beheerpagina.
 
 In het Vercel-dashboard zie je land, pagina's, referrers, devices en browsers. Zie ook [`/privacy`](/privacy) op de live site.
 
